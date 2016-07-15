@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Apollo</string>
+    <string name="invite_friend">Convidar amigo</string>
+    <string name="choose_file">Escolher musica</string>
+    <string name="share_file">Compartilhar musica</string>
+    <string name="chooser_title">Escolher musica</string>
+    <string name="sending_request">Enviando solicitação</string>
+
 </resources>

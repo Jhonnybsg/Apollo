@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
+        classpath 'com.android.tools.build:gradle:1.5.0'
     }
 }
 
@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId "ufam.edu.com.br.apollo"
-        minSdkVersion 9
+        minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -29,7 +29,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':aFileChooser')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
 }
